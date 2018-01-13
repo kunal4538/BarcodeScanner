@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/background"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:text="SCAN  TO   PAY"
+        android:textColor="#84ff10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:text="REGISTER"
+        android:onClick="alogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp"
+        android:id="@+id/aregister" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fcff2d"
+        android:inputType="textPersonName"
+        android:hint="USER ID"
+        android:ems="10"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:id="@+id/aid" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fcff2d"
+        android:inputType="textPassword"
+        android:hint="PASSWORD"
+        android:ems="10"
+        android:layout_below="@+id/aid"
+        android:layout_alignLeft="@+id/aid"
+        android:layout_alignStart="@+id/aid"
+        android:layout_marginTop="27dp"
+        android:id="@+id/apass" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="CONFIRM PASSWORD"
+        android:inputType="textPassword"
+        android:textColor="#fcff2d"
+        android:ems="10"
+        android:layout_below="@+id/apass"
+        android:layout_alignRight="@+id/apass"
+        android:layout_alignEnd="@+id/apass"
+        android:layout_marginTop="31dp"
+        android:id="@+id/editText3" />
+
+    <TextView
+        android:text="NOTE: Only One Registeration Allowed!"
+        android:textColor="#fcff2d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/textView12" />
+
+
+</RelativeLayout>
